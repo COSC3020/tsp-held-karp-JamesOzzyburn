@@ -19,6 +19,11 @@ dm = [[0,1,2],
       [2,2,0]];
 assert(tsp_hk(dm) == 3);
 
+dm = [[0,2,4],
+      [1,3,5],
+      [2,20,0]];
+assert(tsp_hk(dm) == 4);
+
 // https://people.sc.fsu.edu/~jburkardt/datasets/tsp/tsp.html
 dm = [[0,3,4,2,7],
       [3,0,4,6,3],

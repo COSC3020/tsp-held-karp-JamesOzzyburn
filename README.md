@@ -47,3 +47,8 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+## Answer
+When you run this algorithm with $n$ elements it will run $n$ times with each of those $n$ runs running recursivly $n -1$ times. So that will get us to $2^n$ times becuase it has to run for every subset. This gives us a worst case time complexity of $\Theta(2^n)$. As this program also does caching if its in the cache it wont have to run as long.
+
+For memory complexity as every path is stored in the cache and it runs $2^n$ times it will have $2^n$ items in the cache. So worst case memory complexity is $\Theta(2^n)$
